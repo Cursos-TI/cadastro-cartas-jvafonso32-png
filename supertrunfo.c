@@ -15,6 +15,8 @@ int main() {
     float area1;
     float pib1;
     int pontosTuristicos1;
+    float densidadepopulacional1;
+    float pibpercapta1;
 
     // --- Variáveis para a Carta 2 ---
     char estado2;
@@ -24,6 +26,8 @@ int main() {
     float area2;
     float pib2;
     int pontosturisticos2;
+    float densidadepopulacional2;
+    float pibpercapta2;
 
 
     //---ENTRADA DE DADOS----
@@ -67,6 +71,10 @@ int main() {
     printf(" area- %.2f \n", area1);
     printf(" pib-%.2f \n",pib1);
     printf(" pontos turisticos- %d \n",pontosTuristicos1);
+    densidadepopulacional1 = (populacao1 / area1);
+    printf("desidade populacional é: %f\n", densidadepopulacional1);
+    pibpercapta1 = (pib1 / populacao1);
+    printf("o PIB é: %f\n", pibpercapta1);
 
     //---RESPOSTA PC 2---- 
     printf("\n----------------------\n");
@@ -78,6 +86,10 @@ int main() {
     printf(" area- %.2f \n", area2);
     printf(" pib-%.2f \n",pib2);
     printf(" pontos turisticos- %d \n",pontosturisticos2);
+    densidadepopulacional2 = (populacao2 / area2);
+    printf("desidade populacional é: %f\n", densidadepopulacional2);
+    pibpercapta2 =(float) (pib2 / populacao2);
+    printf("o PIB é: %f\n", pibpercapta2);
 
     return 0;
 
